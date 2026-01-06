@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JogoDeDadosRnk</title>
+    <link rel="shortcut icon" href="./assets/icones/IconeDeDados.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <div class="tela">
+        <header>
+            <h1>Jogo de Dados</h1>
+        </header>
+        <main class="container">
+            <div id="setup-section">
+                <h2>Quem está jogando?</h2>
+                <div class="input-group">
+                    <label for="player1-name">Nome do Jogador 1:</label>
+                    <input type="text" id="player1-name" placeholder="Digite o nome do jogador 1" maxlength="23" autofocus title="Pressione Enter" />
+                </div>
+                <div class="input-group">
+                    <label for="player2-name">Nome do Jogador 2:</label>
+                    <input type="text" id="player2-name" placeholder="Digite o nome do jogador 2" maxlength="23" title="Pressione Enter" />
+                </div>
+                <button id="start-game-btn" title="Pressione Enter">Começar a Jogar</button>
+            </div>
+            <div id="game-section" class="hidden">
+                <h2 id="resultado">Quem vai vencer?</h2>
+
+                <div class="dados">
+                    <div class="jogador">
+                        <p id="p1-display-name">Jogador 1</p>
+                        <img id="dado1" src="./assets/imagens/dado-6.png" alt="Dado do Jogador 1">
+                    </div>
+                    <div class="jogador">
+                        <p id="p2-display-name">Jogador 2</p>
+                        <img id="dado2" src="./assets/imagens/dado-6.png" alt="Dado do Jogador 2">
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button id="rolar-btn">Rolar os Dados</button>
+                    <p>🎰 🎲 🎰</p>
+                    <button id="alterar-nomes-btn">Alterar Nomes</button>
+                </div>
+
+                <section class="ranking-section">
+                    <h2>🏆 Ranking de Vitórias 🏆</h2>
+                    <ol id="ranking-list"></ol>
+                    <button id="limpar-ranking-btn">Limpar Ranking</button>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="powerVB">
+                <div class="ladoEsquerdo">
+                    <p>© 2025 Valter Bercelli</p>
+                </div>
+                <div class="ladoDireito">
+                    <p><strong>Powered by Bercelli</strong></p>
+                    <img src="./assets/imagens/LogoBercelli_RepoGit.png" alt="Powered by Bercelli">
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./assets/js/script.js" defer></script>
+</body>
+
+</html>
